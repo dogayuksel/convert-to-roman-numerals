@@ -24,6 +24,6 @@ assert(convertToRomanNumeral(1776), 'MDCCLXXVI');
 assert(convertToRomanNumeral(1954), 'MCMLIV');
 assert(convertToRomanNumeral(1990), 'MCMXC');
 assert(convertToRomanNumeral(2014), 'MMXIV');
-assert(convertToRomanNumeral(4449), 'MMMMCMXCI');
+assert(convertToRomanNumeral(4999), 'MMMMCMXCIX');
 
 console.log('All Tests Passed!');
