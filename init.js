@@ -16,10 +16,11 @@ const romanSymbols = [
 
 /**
  * Converts given number to roman numerals.
- * @param number [number] Number to be converted
- * @return [string] Corresponding roman numeral value
+ * @param {number} number - Number to be converted.
+ * @return {string} Corresponding roman numeral value.
  */
 const convertToRomanNumeral = (number) => {
+  validateInput(number);
   let remainder = number;
   let romanNumeral = '';
   // On each step
@@ -34,6 +35,18 @@ const convertToRomanNumeral = (number) => {
     romanNumeral = `${romanNumeral}${symbol}`;
   }
   return romanNumeral;
+};
+
+const validateInput = (number) => {
+  if (typeof number !== 'number') {
+    throw new Error('input should be number type');
+  }
+  if (number < 1 || 4999 < number) {
+    throw new Error('out of range. only valid for 0 < input < 5000');
+  }
+  if (!Number.isInteger(number)) {
+    throw new Error('given value not an integer');
+  }
 };
 
 module.exports = { convertToRomanNumeral };
