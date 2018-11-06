@@ -9,6 +9,11 @@ const assert = (a, b) => {
   }
 }
 
-assert(convertToRomanNumeral(1), 1);
+// Inputs smaller then 10
+assert(convertToRomanNumeral(1), 'I');
+assert(convertToRomanNumeral(3), 'III');
+assert(convertToRomanNumeral(4), 'IV');
+assert(convertToRomanNumeral(7), 'VII');
+assert(convertToRomanNumeral(9), 'IX');
 
 console.log('All Tests Passed!');
