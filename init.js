@@ -1,5 +1,5 @@
 const convertToRomanNumeral = (number) => {
-  console.log(number);
+  return number;
 };
 
 module.exports = { convertToRomanNumeral };
