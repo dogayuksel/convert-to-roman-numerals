@@ -1,0 +1,20 @@
+* Introduction
+This npm module exposes a simple function that converts given number to roman numeral. The function takes a number type as an argument and returns a string. For simplicity, only positive integers smaller then 5000 are supported. [[https://en.wikipedia.org/wiki/Subtractive_notation][Subtractive notation]] is used as the roman numeral standard.
+
+* Usage
+Add this package to your dependencies. Import and use as follows:
+#+begin_src js
+const { convertToRomanNumeral } = require('./init.js');
+convertToRomanNumeral(5) // returns 'V'
+convertToRomanNumeral(11) // returns 'XI'
+#+end_src
+
+* Tests
+Run the tests using the following command:
+#+begin_src sh
+yarn test
+#+end_src
+or,
+#+begin_src sh
+npm test
+#+end_src
